@@ -1,0 +1,11 @@
+1.ping 连接是否正常
+	ping 连接不正常时 添加 c:\windows\system32\drivers\etc\hosts 文件中 ip 网址 
+	例如：192.30.255.112 github.com
+2.秘钥如果不对需要重新修改
+	秘钥不对时，git中输入 ssh-keygen -t rsa -C"githun账号或者邮箱"
+	拷贝C:\Users\DELL\.ssh\id_rsa.pub 文件中秘钥
+	在github网页中重新生成SSH keys 
+3.删除 origin
+	git remote rm origin
+4.重新连接
+	$ git remote add origin https://github.com/账号/项目.git
